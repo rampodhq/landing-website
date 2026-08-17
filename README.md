@@ -18,4 +18,4 @@ npm run lint
 npm test
 ```
 
-The site is built with vinext and configured for OpenAI Sites hosting.
+The site is built with React and Vite, then deployed from `main` through GitHub Pages.
