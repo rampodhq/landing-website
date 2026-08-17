@@ -6,7 +6,7 @@ test("builds the Rampod GitHub Pages artifact", async () => {
   const html = await readFile(new URL("../dist/index.html", import.meta.url), "utf8");
 
   assert.match(html, /<title>Rampod \| Small engineering work, resolved<\/title>/i);
-  assert.match(html, /\/landing-website\/assets\/index-[^"']+\.js/);
-  assert.match(html, /https:\/\/rampodhq\.github\.io\/landing-website\/og\.png/);
+  assert.match(html, /\.\/assets\/index-[^"']+\.js/);
+  assert.match(html, /https:\/\/rampod\.co\/og\.png/);
   await access(new URL("../dist/og.png", import.meta.url));
 });
